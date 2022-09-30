@@ -3,14 +3,9 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '12.4'
 install! 'cocoapods', :deterministic_uuids => false
-# use_frameworks! :linkage => :static
 
 target 'Test' do
   config = use_native_modules!
-
-  pod 'MSAL'
-  pod 'RxSwift', '6.5.0'
-  pod 'GoogleSignIn'
 
   # Flags change depending on the env values.
   flags = get_default_flags()

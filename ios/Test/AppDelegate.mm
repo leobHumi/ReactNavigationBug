@@ -27,7 +27,6 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 @end
 #endif
 
-#import <Test-Swift.h>
 
 @implementation AppDelegate
 
@@ -47,8 +46,6 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 
   NSDictionary *initProps = [self prepareInitialProps];
   UIView *rootView = RCTAppSetupDefaultRootView(bridge, @"Test", initProps);
-  
-  [Test test];
 
   if (@available(iOS 13.0, *)) {
     rootView.backgroundColor = [UIColor systemBackgroundColor];
